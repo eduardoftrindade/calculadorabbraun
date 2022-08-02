@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Uma simples calculadora que te ajuda a descobrir o final das soluções com apenas duas informações."
+        />
+
+        <title>Calculadora BBraun</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="#" />
+    </head>
+    <body>
+        <header>
+            <!-- <img src="./logo.png" alt="Logo BBraun" /> -->
+            <h1>Calculadora de Soluções</h1>
+        </header>
+
+        <main>
+            <form>
+                <!-- <h3>Selecione o volume</h3> -->
+
+                <section class="volumes-container">
+                    <div class="volumes">
+                        <label for="100">100ml</label>
+                        <input
+                            checked
+                            type="radio"
+                            id="100"
+                            name="volume"
+                            value="100"
+                        />
+                    </div>
+
+                    <div class="volumes">
+                        <label for="250">250ml</label>
+                        <input
+                            type="radio"
+                            id="250"
+                            name="volume"
+                            value="250"
+                        />
+                    </div>
+
+                    <div class="volumes">
+                        <label for="500">500ml</label>
+                        <input
+                            type="radio"
+                            id="500"
+                            name="volume"
+                            value="500"
+                        />
+                    </div>
+
+                    <div class="volumes">
+                        <label for="1000">1000ml</label>
+                        <input
+                            type="radio"
+                            id="1000"
+                            name="volume"
+                            value="1000"
+                        />
+                    </div>
+                </section>
+
+                <section class="campos-container">
+                    <div class="campo">
+                        <label for="qtd-programada"
+                            >Quantidade Programada</label
+                        >
+                        <input
+                            type="number"
+                            id="qtd-programada"
+                            name="qtd-programada"
+                        />
+                    </div>
+
+                    <div class="campo">
+                        <label for="qtd-produzida">Quantidade Produzida</label>
+                        <input
+                            type="number"
+                            id="qtd-produzida"
+                            name="qtd-produzida"
+                        />
+                    </div>
+                </section>
+
+                <button
+                    type="button"
+                    id="calcular"
+                    onclick="resultado.value=calculo()"
+                >
+                    Calcular
+                </button>
+
+                <div class="saida">
+                    <output
+                        for="qtd-produzida qtd-programada"
+                        name="resultado"
+                    ></output>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <label
+                >Eduardo Trindade | Todos os direitos reservados | 2022</label
+            >
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

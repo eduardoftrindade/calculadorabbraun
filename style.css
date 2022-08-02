@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background-color: #000;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+main {
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    font-size: 1.5em;
+}
+
+form {
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+}
+
+.campos-container {
+    margin: 20px;
+    /* margin-bottom: 60px; */
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.campo input {
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+}
+
+.campo label {
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+}
+
+.volumes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.volumes {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.volumes input {
+    cursor: pointer;
+}
+
+.saida {
+    padding: 1em;
+    border: 1px solid;
+    height: 4em;
+    width: 30em;
+    border-radius: 5px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+button {
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    height: 2em;
+    width: 8em;
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: rgb(22, 22, 22);
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+footer label {
+    font-size: 1.1em;
+}
