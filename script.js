@@ -18,14 +18,8 @@ function calculo() {
         return result;
 
     } else if (qtd_produzida == "") {
-        result = "Por favor, digite a quantidade produzida."
+        result = "Por favor, digite a quantidade produzida.";
         document.getElementById("qtd-produzida").focus();
-        return result;
-    }
-
-    if (qtd_produzida > qtd_programada) {
-        result = "A quantidade produzida não pode ser maior do que a quantidade programada. Por favor, verificar.";
-        document.getElementById("qtd-programada").focus();
         return result;
     }
 
@@ -53,11 +47,17 @@ function calculo() {
     var carros_restantes = qtd_restante / qtd_por_carro;
     var minutos_restantes = carros_restantes * minutos_por_carro;
 
+    if (qtd_restante < 0) {
+        result = "A quantidade produzida não pode ser maior do que a quantidade programada. Por favor, verificar.";
+        return result;
+    }
+
     var data = new Date();
 
-    data.setMinutes(data.getMinutes() + minutos_restantes)
+    data.setMinutes(data.getMinutes() + minutos_restantes);
 
-    var dataFormatada = data.toLocaleString("pt-br")
+    var dataFormatada = data.toLocaleString("pt-br");
+
 
     if (minutos_restantes > 60) {
         var horas = (minutos_restantes / 60) | 0;
